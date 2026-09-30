@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ComicCraft AI</title>
+<style>
+body{font-family:Arial;background:#fff5e9;padding:20px}
+.main{max-width:800px;margin:auto;background:white;border:3px solid black;border-radius:15px;padding:20px;box-shadow:8px 8px 0 black}
+input,textarea,select{width:95%;padding:10px;margin:8px 0;border:2px solid black;border-radius:8px}
+button{background:red;color:white;padding:12px 25px;border:2px solid black;border-radius:8px;font-weight:bold;cursor:pointer}
+.logo{position:absolute;right:10px;top:10px}
+</style>
+</head>
+<body>
+<div class="main">
+<h2 style="text-align:center">🦊 ComicCraft - AI Comic Story Creator</h2>
+
+<form action="/generate" method="post">
+<label>Main Story Idea:</label>
+<textarea name="story" placeholder="Ex: A clever fox adventure in forest..." required></textarea>
+
+<label>Hero Name:</label>
+<input type="text" name="hero" placeholder="Ex: Foxy" value="Foxy">
+
+<label>Location:</label>
+<input type="text" name="location" placeholder="Ex: Dark forest" value="The Forest's Edge">
+
+<label>Tone / Mood:</label>
+<select name="tone"><option>Adventure</option><option>Funny</option><option>Emotional</option></select>
+
+<label>Visual Style:</label>
+<select name="style"><option>Realistic</option><option>Cartoon</option><option>Anime</option></select>
+
+<center><button type="submit">Generate Comic!</button></center>
+</form>
+
+<br>
+<div style="border:2px solid #ccc;padding:10px;text-align:center">
+<b>Your Comic Preview</b><br><br>
+<img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5" width="300" style="border-radius:10px">
+<p><b>Panel 1: The Forest's Edge</b></p>
+</div>
+
+</div>
+</body>
+</html>
